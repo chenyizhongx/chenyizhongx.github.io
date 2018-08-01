@@ -1,0 +1,57 @@
+/*
+* @Author: zhong
+* @Date:   2018-07-30 22:46:47
+* @Last Modified by:   zhong
+* @Last Modified time: 2018-07-31 09:16:37
+*/
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10%;
+}
+
+h2 {
+  padding-right: 280px;
+}
+
+form {
+  border-style: solid;
+  padding: 30px;
+  /*padding-right: 200px;*/
+}
+
+.field {
+  padding-top: 15px;
+}
+
+#text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
