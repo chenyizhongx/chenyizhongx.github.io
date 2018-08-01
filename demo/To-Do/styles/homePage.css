@@ -1,0 +1,131 @@
+/*
+* @Author: zhong
+* @Date:   2018-07-25 18:52:12
+* @Last Modified by:   zhong
+* @Last Modified time: 2018-07-27 12:07:51
+*/
+.box {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  text-align: left;
+  font-size: 30px;
+  /*height:100vh;*/
+}
+
+header, footer {
+  flex: 0 0 40px;
+  line-height: 40px;
+}
+
+header {
+  border-style: solid;
+}
+
+footer {
+  text-align: center;
+  border-style: solid;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+nav {
+  order: -1;
+  border-right-style: solid;
+  flex: 0 0 300px;
+}
+
+nav li {
+  list-style: none;
+}
+
+main {
+  flex: 1;
+}
+
+.mainPicture {
+  background-image: url(../images/background.jpg); 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 220px;
+  position: relative;
+}
+
+.mainPicture p {
+  position: absolute;
+  left: 30px;
+  bottom: 10px;
+  color: black;
+  font-family: "Microsoft Yahei";
+  font-weight: lighter;
+}
+
+#p1 {
+  list-style: none;
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+}
+
+#input1 {
+  height: 60px;
+  font-size: 30px;
+  font-family: "Microsoft Yahei";
+  font-weight: lighter;
+  padding-left: 20px;
+}
+
+#allNewList {
+  height: calc(100vh - 280px);
+  overflow: auto;
+}
+
+
+/*<!-- 新建项目列表 -->*/
+
+
+#allNewList li {
+  list-style: none;
+  border-bottom-style: ridge;
+}
+
+
+#liList :hover #deleted{
+  opacity: 1;
+}
+
+
+#deleted {
+  position: absolute;
+  right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  opacity: 0;
+  display: inline-block;
+}
+
+
+
+
+/*-----------nav------------*/
+
+#leftItems {
+  border-bottom-style: ridge;
+  border-top-style: ridge;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.btn-group-vertical {
+  font-size: 30px;
+}
+
+
+

@@ -1,0 +1,143 @@
+/*
+* @Author: zhong
+* @Date:   2018-07-25 18:52:12
+* @Last Modified by:   zhong
+* @Last Modified time: 2018-07-31 11:35:50
+*/
+.box {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  text-align: left;
+  font-size: 30px;
+}
+
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+nav {
+  order: -1;
+  border-right-style: ridge;
+  flex: 0 0 300px;
+}
+
+nav li {
+  list-style: none;
+}
+
+main {
+  flex: 1;
+}
+
+.mainPicture {
+  background-image: url(../images/background.jpg); 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 220px;
+  position: relative;
+}
+
+.mainPicture p {
+  position: absolute;
+  left: 30px;
+  bottom: 10px;
+  color: black;
+  font-family: "Microsoft Yahei";
+  font-weight: lighter;
+}
+
+#p1 {
+  list-style: none;
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+}
+
+#input1 {
+  height: 60px;
+  font-size: 30px;
+  font-family: "Microsoft Yahei";
+  font-weight: lighter;
+  padding-left: 20px;
+}
+
+#allNewList {
+  height: calc(100vh - 284px);
+  overflow: auto;
+}
+
+
+/*<!-- 新建项目列表 -->*/
+
+
+#allNewList li {
+  list-style: none;
+  border-bottom-style: ridge;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+
+#allNewList :hover #deleted {
+  opacity: 0.5;
+}
+
+/*#liList {
+  position: relative;
+  flex: 1;
+}*/
+
+#liText {
+  flex: 1;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  word-wrap:break-word;
+  word-break:break-all;
+}
+
+#deleted {
+  right: 20px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  opacity: 0;
+}
+
+#span3 {
+/*  position: absolute;
+  right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;*/
+  /*flex: 0 0 40px;*/
+}
+
+#iconSelected {
+  /*flex: 0 0 64px;*/
+}
+
+
+
+/*-----------nav------------*/
+
+#leftItems {
+  border-bottom-style: ridge;
+  border-top-style: ridge;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.btn-group-vertical {
+  font-size: 30px;
+}
+
+
+
